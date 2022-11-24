@@ -8,13 +8,11 @@
 }
 
 body{
-    
-    background-color: var(--bg-color);
-    background-image: url(../assets/bg.svg);
-    padding-block: 3.25rem ;
+    background: var(--bg-color) url(../assets/bg.svg) no-repeat top center/cover;
+    padding-block: 3.25rem;
 }
 
-header{
+header {
     display: flex;
     justify-content: center;
     margin-bottom: 4rem;
@@ -22,29 +20,30 @@ header{
 
 main{
     width: fit-content;
-    margin-inline:auto; 
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-h2{
+h2{ 
     color: var(--card-color-primary);
     border: 1px solid var(--card-title-border-color);
     display: flex;
-    align-items: center;
+    align-items:center;
     padding: .5rem 1rem;
     gap: 1rem;
     border-radius: 6px;
     margin-bottom: 3.25rem;
-    
 }
-    
+
 span{
     color: #fff;
     font-size: .875rem;
     text-transform: uppercase;
 }
 
-
 ul{
-  list-style: none;
-  width: 100%;
+    list-style: none;
+    width: 100%;
 }
